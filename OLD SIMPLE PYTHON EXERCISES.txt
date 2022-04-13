@@ -1,0 +1,638 @@
+
+a = ["mam", "na", "imię", "Mikołaj"] change this into string					>					" ".join(list)
+
+zamien string "maja lubi jest lody" na liste
+
+ze stringa "    hello word     " usuń spacje przed i za tekstem				>				strip
+następnie znajdz na jkaiej pozycji znajduje się "  o  "					>				 za pomocą .find 
+
+put 'gabi' into index 1  ['kaja', 'basia', 'maja']		 			>								.insert
+
+POBAW SIĘ .SPLIT i .JOIN
+change list ["how","are","you",'you','doing'] into string 										using ' '.join(list) method
+
+skopiuj liste [1,1,6,6,5,1,1]
+
+sort list [2,6,1,8,2,-8,9,-20,12,1]
+
+sort list ['kaja', 'basia', 'maja']
+
+change string this is text to be red after displaying									>						"\033[91mTHIS IS TEXT"
+
+sort in reverse list [2,6,1,8,2,-8,9,-20,12,1] 					---->>>								.sort(reverse=True)
+
+Print create a set with numbers from 1 to 100 without numbers divided by 3			>					>			{i for i in range(1,101) if i % 3}
+
+sort list ["Alicja", "Zumbana", 'kaja', 'basia', 'maja'] in alphabetical order				---->>>							.sort(key=str.lower)
+
+using for loop print(index, item) in list [dog, cat, pancil, pen, drink, wolf, rubber]							>	enumerate >
+
+z listy [1,1,6,6,5,1,1]wyswietl tylko 665 
+
+napisz program labda mnożący wszystkie argumenty z listy [1,1,6,6,5,1,1] przez 2.
+
+napisz program labda mnożący wszystkie argumenty z listy [1,1,6,6,5,1,1] przez siebie
+
+napisz program wszystkie argumenty z listy [1,1,6,6,5,1,1] przez 2.
+
+stwórz program lambda otrzymujący dwa argumenty x i y.
+
+convert list [1, 2, 3, 4, 5] into dictionary using numbers in list as keys								>			dict.fromkeys(list, value)
+
+stworz set ze stringa "Hello world" i wyswietl go
+
+using list = [2, 3, 5, 2, 7, 2, 4, 2, 76, 4,2, 3, 4,5,6] count how many each element apeares in list						>						from collections import Counter		Counter(list)
+
+stworz set skladający sie z 1  i  2 nastepnie dodaj za pomoca komendy 3  i  unieruchom seta aby byl nie zmienny
+stwórz drugi set 3 4 5 6 i sprawdź czy mają one coś wspólnego(co takiego mają) i czym się różni 1set od 2set i czym ogólnie się różnią
+następnie połącz oba sety.
+
+a = {"brand": "Ford", 'kaja': 'maj'} b = {'kaja': 'maj', 'maid': 'wolf'} combine these dictioneries so there are no multiple elements		>				= {**a, **b}
+
+#posible ??? stworz set = {1, 2, 3, 99} i usun ostatnią rzecz w secie, nastepnie usun caly sett
+
+ a = [10, 20, 30]  dodaj te elementy do siebie i wyswietla ich sume
+
+Stwórz program pytający się o użytkownika o jego imię, nazwisko i wiek oddzielenie i oddzielnie mowi do uzytkownika o tych informacjach.
+
+Stwórz program pytający się o haslo w pętli
+
+Stwórz gre orzeł i reszka dzięki import random i dołączjąc random.randint(0,1)
+
+aby z importowac wszystko z modul np: from random import *     "*"oznacza wszystko
+
+Using for loop create counting dictionary input "alibaba"											>						dict = {}	for i in str:    n = dict.get(i, 0)     dict[i] = n + 1		print(dict)
+
+
+zmyslone zadanie {"walery": 23, "natale": 27, "krystyna": 28, "ann": 20, "anna": 25, "krystian": 22,}
+using for loop check and print only those members that age is higher or eq 25
+
+using for loop iterate over a list [10, 44, -23, 29, -31] and change negative numbers into 0							never use range(len()) 			instead use	>			enumerate	this returns index_of_an_item and item		>	for j, i in enumerate(a):   if i < 0:   a[j] = 0
+
+sort touple (2, -6, -10, 20, 8)															>							sorted(lst)
+
+remove all duplicate elements from list [2,4,1,2,5,2,7,9,10,20,30,20,4,5,2,5,5,6]								>			>				turn it into settt	a = list(set(a))
+
+$HARD$ sort dictionery by value in key 'age' {"name": 'micheal','age': 23}, {"name": 'maja', 'age': 17},{"name": 'justin', 'age': 21} using lambda			>				b = sorted(data, key=lambda x: x['age']) 	print(b)
+
+using for loop count from 5 to 30 ading 0.5		#import smt										>	#with normal range method you cant add deciaml values		for i in count(start=5, step=7): print(i) if i > 50: break
+
+creata generator for loop, generate 10 numbers alongside each other not under each other							>				print(i, end="")   deafalt value of end is \n
+
+
+a = [2, 3, 4, 9, 2, 3] b = ['2','5','6','name'] c = [54,7,49] find 'name' in all list using only one for loop					>			#import		>		for i in itertools.chain(lists, , ,):  print(i)	
+
+create all posible combinations with repeating of characters:  ["G", "o", "3"]									#import itertools permutations   product('gwa', 3)
+
+Write a Python program to get the current user.													>							import getpass		print(getpass.getuser())
+
+
+
+from 1 to 100 print all numbers that are divided by 2 and 3 so 6,12,18...									>				if i % 2 == 0 and i % 3 == 0
+
+from 1 to 100 print all numbers that are divided by 2 or 3 so 2,3,4,6,8,9...									>				if i % 2 == 0 or i % 3 == 0
+
+from 1 to 100 print all numbers that are not divided by 2 and 3 so without 6,12,18..								>				if i % 2 or i % 3	or  	if not i % 2 == 0 and not i % 3 == 0
+
+from 1 to 100 print all numbers that are not divided by 2 or 3 so without 2,3,4,6,8...								>				if i % 2 and i % 3	or	if not i % 2 == 0 or not i % 3 == 0
+
+
+
+
+
+
+
+
+
+
+						*** NOWSZE ZADANIA ***
+
+
+
+Check the documentation of the function														>											abs.__doc__
+
+Display callendar of 2021															>											import calendar 	print(calendar.calendar(2021))
+
+create a function that takes 2 numbers and returns multiply of thiese numbers:
+	now pass list from 1 to 10 and multiply all number together										>											print(reduce(foo, [1,2,3,4,5]))
+
+Using data = [{'name': 'orange', 'price': 20}, {'name': 'avocado', 'price': 10}, {'name': 'apple', 'price': 5}]					>											[i['name'] for i in data]
+	create new list using comprehension containing only names od fruits
+	create new list using comprehension containing only fruit names that starts with an a							>											[i['name'] for i in data if i['name'][0] == 'a']
+		using this dict create new dict using dict comprehesions containing keys='name' and values='price'				>											{i['name']: i['price'] for i in data}
+
+if True:    x=1     else:    x=0	using turneiry conditional turn this into one line code							>											x = 1 if True else 0
+
+create a variable 1 bilion that is easy to read													>											x = 1_000_000_000
+	now using string formating print easy to read number 											>											f'{num:,}'
+
+open file pokemon using context meneger														>											with open('pokemon.csv', 'r') as f:  file_content = f.read()
+
+change this string "THIS IS TEXT" to be blue after displaying with print									>								"\033[94mTHIS IS TEXT"
+
+using list ['al', 'w2', 'y6'] print all 'values = index' index must start from 3								>											for i j in enumerate(list, start=3): print...
+
+
+
+
+*** SAVE 1
+
+
+
+using lists [1,2,3,4]  [9,8,7,6] and using for loop  print index, list1[0], list2[0]								>											for i j in enumerate(zip(list,list)):  print... 
+
+import# using list ['al', 'w2', 'y6'] and [2,5,7,13,21,34] using for loop print all values1 = values2 even if first list runs out of values	>								from itertools     zip_longest ??
+
+using lists [1,2,3,4]  [9,8,7,6] ['al', 'w2', 'y6', 'r2'] turn those values into one tuple using for loop					>								for i in zip(l1,l2,l3)
+
+
+
+using tuple (1,2,3) assign a tp 1 and 2,3 to value b												>								a, *b = tuple
+
+using tuple (1,2,3,4,5) assign only 2,3,4,5 to value b and ignore first value									>								_, *b = tuple
+
+create a function that takes a number and returns squared number
+	now using list [i for i in range(10)] pass this list into a function and get list with all numbers squared				>								q = list(map(func, list))
+
+create a function that takes a number check if it is even number:
+	now using list [i for i in range(10)] pass this list into a function and get list with all even numbers 				>								q = list(filter(func, list))
+
+create ten lists																>								a = []*10
+
+create list with ten lists containing 0														>								a = [[0]*10]
+
+def foo(a, b, c):   print(a, b, c)
+data = {'a': 2, 'b': 3, 'c': 4}  pass this dict to created function										>								foo(**data)
+data = (2,3,4)  pass this tuple to created function												>								foo(*data)
+
+a = [[1,2,3],[1,2,3]]
+b[0][1] = 20   make a copy of this list and change this value in copied list									>								normal(shallow) copy won't work you need to deep copy		import copy    b = copy.deepcopy(list)
+
+
+what number represents "G" in ASCII														>								ord()
+
+what ASCII character represents number 80													>								chr()		'P'													>								ord()
+
+print documentation of any function														>								fun.__doc__
+
+data = [1,2,3,4,5] check if data is a list													>								isinstance(data, list)
+
+
+
+
+data = 20 check if data is an integer														>								isinstance(data, int)
+
+#import  data = [1,2,3,4,5,6,7,8,9,10] add new value 0 to the left side of this list								>								collection.deque   a.appendleft(0)
+	move all values to the right(each value index +1											>								a.rotate(1)
+
+using lambda create a function
+
+check what methods and functions are in datetime module												>								import module	   >   print(dir(datetime))
+	print documentation of method														>								help(datetime.time)   datetime.time.__doc__
+
+#import  data = [(2,5), (3,2), (10,3)]  raise first noumber to the power of the second using special function					>								starmap(pow, data)
+
+#import  {'wd': 1}{'wed': 2, 'kdz': 3}{'pto': 5} conect those dict together into one								>								from collections import ChainMap   d = ChainMap(dict, dict, dict)
+
+#import check statistics about any function code 												>								import cProfile   def sum():  print(2**20)    cProfile.run('sum()')
+
+Write a Python program to get the details of math module.											>								help(math)     and print(dir(math))
+
+knowledge question: how many nmbers can we store on 3 bits											>								2 ** 3 == 8 numbers
+	how mnay numbers can we store on 6bits													>								2 ** 6 == 64
+
+knowledge: On a 64-bit system an integer in Python takes 24 bytes. This is 3 times the memory that would be needed in e.g. C for a 64-bit integer. Now, I know this is because Python integers are objects.
+	to solve big memory usage we use numpy
+
+change this string "THIS IS TEXT" to be green after displaying with print									>								"\033[92mTHIS IS TEXT"
+
+
+create a program that will combine elements from 2 lists and if lenght of those lists are not equal raise an error				>								zip(a,b, strict=True)
+
+using list from 0 to 10 using loop or comprehension modify list in place so list contais only even numbers					>								list[:] = [i for i in list if i % 2 != 0]
+	#using one of itertools functions make this even faster											>								list[:] = filterfalse(func, list)       or try just filter
+
+using list [5,4,7,2,89,2,3,1,5,9,11,66,28,5] get inddex of number 66										>								list.index(66)
+
+#to run a comand inside python use subprocess or os
+
+using dictionery unpacking  a = {'2':2, '3':3}	b = {'2':2, '4':4} combine those 2 dictionery into one and print it				>	python 3.5 and higher					c = {**a , **b}
+
+
+
+
+*** save 2
+
+
+
+using | pipe sign	  a = {'2':2, '3':3}	b = {'2':2, '4':4} combine those 2 dictionery into one and print it				>	python 3.9 and higher					c = a | b 
+
+combine list = [1,2] with tuple = (3,4)	into one list												>								c = [*list, *tuple]
+
+using format round this number to 3 decimal places:  45.234999998999										>		format() returns string				value = format(number, ".3f")
+
+using pi mayb from math module using f string display it with only 3decimal places								>								f"pi = {math.pi:.3f}"
+
+using datetime module date 1990, 1, 1 display this date using f string just like January 01 1990						>								f'{birthday:%B, %d, %Y}'
+
+lst = [[1,2],[3,4],[4,2],[-1,3],[4,5],[2,3]] sort this list by second value			#works also with sorted				>								lst.sort(key=lambda x: x[1])
+
+
+
+*** SAVE
+
+
+
+lst = [[1,2],[3,4],[4,2],[-1,3],[4,5],[2,3]] sort this list by the sum of both elements								>								lst.sort(key=lambda x: x[0] + x[1])
+
+using 2 lists combine each element from 1 list with the other element	list1 = [1,2,3,4]   list2 = [9,8,7,6] so you get: (1,9),(2,8)...	>								list(zip(1,2))
+
+combine these lists into one list 					list1 = [1,2,3,4]   list2 = [9,8,7,6]					>								+  or  itertools.chain(1,2)
+
+create a function camelcase that will take as an input string with many words seperated by underscore insted of space _ and it will turn it into CamelCase							def camelcase(stri):  return ''.join([word.capitalize() for word in stri.split('_')])
+	do somethink so you can pass list to function  a = ['fefe_fef', 'efe_feef', maja_kowalska]						>								[camelcase(i) for i in a]
+create a document in a function so you will see information when used camelcase.__doc__								>								""" txt inside mapper"""
+create a decorator mapper so you can pass list													>								def mapper(fnc):  def inner(listaa):  return [fnc(value) for value in listaa]   return inner			>@mapper< nad def camelcase
+add documentation to your inner decorator function
+now try to check documentation of your main function												>		#it wont work					becouse you replaced functionality of your function with decorator
+fix documentation of your function														>	# from functools import wraps				@wraps(fnc)  < fnc becouse it is  argument of outer function
+
+check all local variables inside your program													>								print(local())
+
+unpack this list so you get all values	list = [[[1,2],[3,4]],[[1,2],[3,4]]]									>								for i in list:   for j in i:   for k in j:
+	do the same but create new list using comprehension											>								new = [k for i in list for j in i for k in j]
+
+change this string "THIS IS TEXT" to be red after displaying with print										>								"\033[91mTHIS IS TEXT"
+
+change this string "THIS IS TEXT" to be purple after displaying with print									>								"\033[34m  TXT "
+
+pogrub text w princie																>								\033[01m
+
+open any page using python															>								import webbrowser    webbrowser.open('link')
+
+In string 'efsjsfilalibabaiewuori3' check on what index is word 'baba'										>								'efsjsfilalibabaiewuori3'.find('baba')
+
+create a function that will take a list and replace it with empty list, so when you print list outside function orginal list will be changed	>								def change(list): list[:] = []      >>    print(list)   change(list)   print(list)	# [:] this will make sure that list will not be replaced but will point to the same list with same memory adres but (changed)
+
+check all global variables inside your program													>								print(global())
+	you can create function with data = [] that will print('data' in locals(), 'data' in globals())
+
+list = ['cat', 'dog', 'cat', 'dog'] delete cat from list											>								list.remove('cat')
+
+weather = 'stormy'    if weather  == 'stormy' or weather  == 'rainy' or weather  == 'sunny':  turn this into cleaner code			>								if weather in ['stormy', 'rainy', 'sunny']: print(wow)
+
+if age>=25 and reputation>=20: print("admin") else:  print("normal user") turn conditions into list and pass this list to if statement		>								conditions = [age >= 25, reputation >= 20]         if all(conditions): ...
+
+list = ['cat', 'dog', 'cat', 'dog', 'chicken', 'cat', 'wolf'] using list comprehension create new list that will not contain 'cat' and 'chicken'>								new = [i for i in list if i not in ['cat', 'chicken']]
+
+check ascii representation number of character 'a'												>								ord('a')
+
+out of string "alibaba" and dictionary {"a":2, "b":5} and using 2 string methods replace 'a' and 'b' with 2 and 5				>								table = string.maketrans(dict)    string.translate(table)
+
+create copy of other nested list = [[1,2],[2,4]], but where every value is 0 using comprehension						>								[[0 for i in A] for j in A]
+
+what can you use to replace pass in function													>								...
+
+check what is the highest number in list = [1,2,4,1,4,2,3,1,4,4,2,3,4,1,4,4,1,1,1,1]								>								max(t)
+
+check what is the most common item in list = [1,2,4,1,4,2,3,1,4,4,2,3,4,1,4,4,1,1,1,1]								>								max(t,key=t.count)
+
+check size of any variable or list														>								sys.getsizeof(x)
+
+turn list [[1,2],[2,3],[2,3]] into flatten list													>								list(itertools.chain.from_iterable(a))
+
+check if word 'abca' is anagram of 'acba'													>								Counter(x) == Counter(y)
+
+Using lambda sort list of tuples by sum of both items [(1,2),(2,3),(5,-3),(20,0)]								>								func = sorted(data, key=lambda x: x[0] + x[1])
+
+Create a function that returns a lambda function which adds passed string to 'Hello' + string passed						>	#and call this function passing "World to lambda	def hah():   return lambda y: "Hello " + str(y)	   >>>	print(hah()('World'))
+
+list = [{'a':'Ford', 'model':'Focus', 'year':2013}, {'a':'Mercedes', 'model':'Cos', 'year':2015}, {'a':'Tesla', 'model':'X', 'year':2016}, {'a':'Lamborgini', 'model':'hmm', 'year':2018}]
+using this list of dict sort it by year key													>								new_list = sorted(list, key=lambda x: x['year'])
+
+Create a function that will return true if number is an int with point 0 at the end > 10.0 True 10.1 False					>	#using isinstance and is_intiger functions		def is_int(x): if isinstance(x, float):  return num.is_integer()   elif isinstance(x, int): return True		else: return False
+
+Find most frequent value in a list [2,5,3,2,1,2,5,3,2,2,0,2] using max function									>								max(set(list), key=list.count)
+
+sum numbers from 1 to 15															>								sum(range(1,16))
+
+create a function that will find factors of given number											>								def factors(x):	for i in range(1, x+1): if x % i == 0: print(i)
+
+get list of all ages from persons = {"persons": [{"name": "erik", "age": 38},{"name": "ek", "age": 23},{"name": "derek", "age": 31}]}		>								print(jmespath.search('persons[*].age', persons))   or   list(i['age'] for i in persons['persons'])
+
+using tuple Person = ("Mike", "Fish", 22, 179) do turn this into namedtuple so instead of geting age as Person[2] you have to write person.name	>								from collections import namedtuple >	Person = namedtuple("Person", "name lname age height")    > person = Person("Mike", "Fish", 22, 179)	>	print(person.name)
+
+person = {"name": "erik", "last_name": "ek", "age": 23} do somethink so instead of using person["name"] you can use dot notation person.name	>								from easydict import EasyDict	>	person = edict({...})
+
+get 3 highest values from list [2,3,57,1,65,7,2,9,77]												>								import heapq >	heapq.nlargest(3, list)
+
+get 4 lowest values from list [2,3,57,1,65,7,2,9,77]												>								import heapq >	heapq.nsmallest(4, list)
+
+merge these 2 dictioneries {"a" = 1, "b" = 3, "c" = 7}  {"a" = 10,"g" = 5,"t" = 33}								>								dict | dict
+
+turn this string into list "[1,2,66,5,6,7,8]" and get third element										>								a = eval(string); del a[2]		# or import ast > ast.literal_eval
+
+Check if lists are in the same memory:	[1,5] [1,5]												>								[1,5] is [1,5]
+
+Using string "string method in python" turn this into list with 2 elements: 1st element to be string till the last space and 2nd last word	>								new = string.rsplit(' ', maxsplit=1)
+
+Create a complex number 10 and imaginary 2													>								complex(10, 2)
+
+Represent 15 in octal system		 													>								oct(15)
+
+	#kolejnosc tych cwiczen nie jest wazna #you can remove code after some changes
+Create dataclass Person that will store name, last_name, age, weight and is_coder								>								from dataclasses import dataclass,field	> @dataclass  class Person: name: str > last_name: str ... is_coder: bool
+	Create an instance of a class with attributes Mikolaj Ryba 22 60 True									>								person = Person('Mikolaj', 'Ryba', 22, 60, True)
+	Change your dataclass so its values cant be changed											>								@dataclass(frozen=True)
+	Make that so all fields except is_coder will be concider as hash value									>								> name: str = field(hash=True) > last_name: str = field(hash=True) > ... is_coder: bool = field(hash=False)	#	Now insances of an object are compared on which fields are True
+	Try:	print(hash(instance))
+	Allow instances of data classto be mutable												>								@dataclass(unsafe_hash=True)
+	Apply the equality comparison operators to your class											>								@dataclass(order=True)
+	Do somethink so reper will not be provided for your dataclass										>								@dataclass(repr=False)	#by default its True
+	Turn repr to True and make only name and last name posibility to be in string representation of an instance				>								> name: str = field(repr=True) > last_name: str = field(repr=True) ... false false
+	Change constructor of this class to be false												>								@dataclass(init=True)
+	Change so age and weight will not be required in contructor and give them default values 0						>								> age: int = field(init=False, default=0) > weight: float = field(init=False, default=0)
+	Give default value for is_coder to be false												>								> is_coder: bool = field(default=True)
+	Using time.time() from time moudle create id for every instance when user doesnt not provide its own id					>								above: get_id = lambda: round(time.time() * 1000)  > id: int = field(default_factory=get_id)
+	Make sure that afte initialization name and last_name are titled									>								def __post_init__(self):  self.name = self.name.title() > self.last_name = self.last_name.title()
+	create a field favorite_language that will not be stored										>								from dataclass import InitVar > favorite_language: InitVar[str] = None
+		during post intialization if favorite_language is passed change is_coder to be True in other case to be False			>								def __post_init__(self, favorite_language):  if favorite_language is not None: self.is_coder = True  > else: self.is_coder = False
+	Create a tuple or a dictionary after making an instance											>								from dataclasses import astuple, asdict >  person = Person(...)   >  astuple(person)  asdict(person)  # print these
+	Create new data class Student that will enherite everythink from above									>								@dataclass class Student(Person):
+		In this new class create field grades that will take strings of grades as parameter						>								from typing import List > grades: List[str] = field(default_factory=list) 
+		create instance of a student with name age age weigth and true and in second line add new grades ['A','A','B'] to this student  >								student = Student(...) >  student.grades.extend(['A','A','B'])
+{	add validation logic to person class that if age < 0 raise ValueError(f'Age {age} is negative')														def __init__(bla bla): if age < 0: raise ValueError(f'Age {age} is negative!') self.name = name .. bla bla
+{	do the same as before but using attr library												>								import attr > @attr.s  class Person(): name: str = attr.ib() ... >  @age.validator def check_age(self, attribute, age): if age < 0: raise ValueError(f'Age {age} is negative!')
+{	do the same as before but using pydantic library											>								from pydantic import validator > from pydantic.dataclasses import dataclass > @dataclass class Person(): name: str  last_name: str ...  @validator('age') def check_age(cls, age): if age < 0: raise ValueError(f'...') > return age <(outside ifa)
+
+To list = [1,3,5,7] add new elements [10,20,30]													>								list.extend([10,20,30])
+
+To some 2column data create bar chart of that will represent logarytmic diffrence data								>								df.plot(x='column', y='column', kind='bar', logy=True)
+
+time how much time it takes to run some lines of code												>	#time.perf_counter works more accured then time.time	import time  >   start = time.perf_counter()  >	end = time.perf_counter()  >  end - start
+
+Create a function that will yield each item at a time from list []										>								def f():  yield from [1,2,3,4]
+
+In string "This is my destiny" change all spaces into "-"											>								s.replace(" ","-")
+
+Using string "string method in python" turn this into list with 2 elements: 1st element to be "string" and the rest to be 2nd element		>								new = string.split(' ', maxsplit=1)
+
+Using function slice, slice this array														>								array[slice(1,5,1)]
+
+Ask for forgivness rather than permission													>								using try, except instead of ckecking things using if 
+
+Do somethink so no metter what, the defoult amount of indent between begining of the number and the rest of the string is 10
+	For example do this with this string f"this number: {number} is big"									>								f"this number: {number:10} is big"	or	.just
+
+Do the same but opposite so indent starts from the string and ends from the end of the number f"this number: {number} is big"			>								f"this number: {number:10d} is big"	or	.ljust
+
+Using f string formating print this with a raper method a = "dog"										>								print(f"{a!r}")
+
+using only string formating display any method and the result of this method									>								print(f"{pow(3,3) = }")
+
+Check on what index values 2,8,20 should be inserted into array [1,3,5,10,14]									>								np.searchsorted(arr, [2,8,20])
+
+Create a class and instance of a class. Now display all the attributes for Class level								>								Cname.__dict__
+	now display all the attributes for instance level											>								instance.__dict__
+
+Create 4 variables at unce from user input													>								x, y, z, p = input("give me nubmers").split() #its imporrtant to say to user to write all numbers with space
+
+#	MULTIPLE STATEMENTS (all , any)
+#
+#	conditions = [
+#		x > 150,
+#		y < 10,
+#		z = 5
+#	]
+#	
+#	if all(conditions):
+#		do this
+
+
+ignore warnings in jupyther notebook														>								import warnings; warnings.simplefilter('ignore')
+
+what library to use to donwload terabytes of data												>								import vaex # it works faster than pandas
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+													>								
+
+
+
+
+
+
