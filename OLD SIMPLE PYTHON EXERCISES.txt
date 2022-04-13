@@ -239,7 +239,7 @@ lst = [[1,2],[3,4],[4,2],[-1,3],[4,5],[2,3]] sort this list by second value			#w
 
 
 
-*** SAVE
+*** SAVE 3
 
 
 
@@ -257,7 +257,7 @@ add documentation to your inner decorator function
 now try to check documentation of your main function												>		#it wont work					becouse you replaced functionality of your function with decorator
 fix documentation of your function														>	# from functools import wraps				@wraps(fnc)  < fnc becouse it is  argument of outer function
 
-check all local variables inside your program													>								print(local())
+
 
 unpack this list so you get all values	list = [[[1,2],[3,4]],[[1,2],[3,4]]]									>								for i in list:   for j in i:   for k in j:
 	do the same but create new list using comprehension											>								new = [k for i in list for j in i for k in j]
@@ -290,6 +290,10 @@ check ascii representation number of character 'a'												>								ord('a')
 out of string "alibaba" and dictionary {"a":2, "b":5} and using 2 string methods replace 'a' and 'b' with 2 and 5				>								table = string.maketrans(dict)    string.translate(table)
 
 create copy of other nested list = [[1,2],[2,4]], but where every value is 0 using comprehension						>								[[0 for i in A] for j in A]
+
+
+*** SAVE 4
+
 
 what can you use to replace pass in function													>								...
 
