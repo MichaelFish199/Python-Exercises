@@ -299,7 +299,7 @@ what can you use to replace pass in function													>								...
 
 check what is the highest number in list = [1,2,4,1,4,2,3,1,4,4,2,3,4,1,4,4,1,1,1,1]								>								max(t)
 
-check what is the most common item in list = [1,2,4,1,4,2,3,1,4,4,2,3,4,1,4,4,1,1,1,1]								>								max(t,key=t.count)
+check what is the most common item in list = [1,2,4,1,4,2,3,1,4,4,2,3,4,1,4,4,1,1,1,1]								>								max(t, key=t.count)
 
 check size of any variable or list														>								sys.getsizeof(x)
 
@@ -319,6 +319,10 @@ Create a function that will return true if number is an int with point 0 at the 
 Find most frequent value in a list [2,5,3,2,1,2,5,3,2,2,0,2] using max function									>								max(set(list), key=list.count)
 
 sum numbers from 1 to 15															>								sum(range(1,16))
+
+***** SAVE 5?
+
+
 
 create a function that will find factors of given number											>								def factors(x):	for i in range(1, x+1): if x % i == 0: print(i)
 
