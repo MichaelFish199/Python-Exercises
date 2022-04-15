@@ -320,7 +320,7 @@ Find most frequent value in a list [2,5,3,2,1,2,5,3,2,2,0,2] using max function	
 
 sum numbers from 1 to 15															>								sum(range(1,16))
 
-***** SAVE 5?
+
 
 
 
@@ -339,6 +339,12 @@ get 4 lowest values from list [2,3,57,1,65,7,2,9,77]												>								import 
 merge these 2 dictioneries {"a" = 1, "b" = 3, "c" = 7}  {"a" = 10,"g" = 5,"t" = 33}								>								dict | dict
 
 turn this string into list "[1,2,66,5,6,7,8]" and get third element										>								a = eval(string); del a[2]		# or import ast > ast.literal_eval
+
+
+
+
+***** SAVE 69
+
 
 Check if lists are in the same memory:	[1,5] [1,5]												>								[1,5] is [1,5]
 
