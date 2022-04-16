@@ -343,16 +343,21 @@ turn this string into list "[1,2,66,5,6,7,8]" and get third element										>		
 
 
 
-***** SAVE 69
+***** SAVE 6
 
 
-Check if lists are in the same memory:	[1,5] [1,5]												>								[1,5] is [1,5]
+zCheck if lists are in the same memory:	[1,5] [1,5]												>								[1,5] is [1,5]
 
 Using string "string method in python" turn this into list with 2 elements: 1st element to be string till the last space and 2nd last word	>								new = string.rsplit(' ', maxsplit=1)
 
 Create a complex number 10 and imaginary 2													>								complex(10, 2)
 
 Represent 15 in octal system		 													>								oct(15)
+
+
+
+***** SAVE 7
+
 
 	#kolejnosc tych cwiczen nie jest wazna #you can remove code after some changes
 Create dataclass Person that will store name, last_name, age, weight and is_coder								>								from dataclasses import dataclass,field	> @dataclass  class Person: name: str > last_name: str ... is_coder: bool
