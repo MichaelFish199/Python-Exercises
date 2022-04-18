@@ -386,6 +386,12 @@ Create dataclass Person that will store name, last_name, age, weight and is_code
 
 To list = [1,3,5,7] add new elements [10,20,30]													>								list.extend([10,20,30])
 
+
+
+
+save 8
+
+
 To some 2column data create bar chart of that will represent logarytmic diffrence data								>								df.plot(x='column', y='column', kind='bar', logy=True)
 
 time how much time it takes to run some lines of code												>	#time.perf_counter works more accured then time.time	import time  >   start = time.perf_counter()  >	end = time.perf_counter()  >  end - start
@@ -408,6 +414,10 @@ Do the same but opposite so indent starts from the string and ends from the end 
 Using f string formating print this with a raper method a = "dog"										>								print(f"{a!r}")
 
 using only string formating display any method and the result of this method									>								print(f"{pow(3,3) = }")
+
+
+save 9
+
 
 Check on what index values 2,8,20 should be inserted into array [1,3,5,10,14]									>								np.searchsorted(arr, [2,8,20])
 
