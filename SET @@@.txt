@@ -1,0 +1,64 @@
+		*** SET ***
+
+
+#set is mutable
+#sets do not contain duplicat elements
+
+
+create an empty set			>			>				 using set()
+create a set using set([])
+to create a set using {} you have to give it some elements
+
+
+create a set of numbers from 1 to 20			>			 		using set(range()) 
+add to set, item 13					>					add()
+add to set, items like 12, 11, 'malina', 23, 'Basia', True			#union		by using .add() 
+copy set								#	using .copy() 
+check how many elements are in your set					#	by using len() 
+remove 'malina' from set 						#if you write element that doesn't exist in set -> THE ERROR WILL OCCUR	by using .remove() 
+remove 'Basia' from set 						#if you write element that doesn't exist in set -> nothink will happened	by using .discard() 
+remove all elements in your set						by using .clear() 
+
+
+create another sets containing a = {1, 3, 5, 7, 9} b = {2, 4, 6, 8, 10} c = {2, 3, 5, 7}
+add set a and b together you should get set from 1 - 10					#using .union() 
+check for similarities in both sets							#using .intersection() 
+check if set 'a' contain number 5							#by using "in" operator 
+by using "not in" operator check if set 'b' contains 2
+
+
+diffrence between set 1st and the others: {2, 4, 1} {1, 3} {1, 2}	#try using 'name - name'	#using .difference() check 
+change 1st set to the diffrence between those 3 previous sets {2, 4} {1,3} {1,2}		#using .diffrence_update() 
+
+
+
+(a ^ b) == .symetric_diffrence()
+(a & b) == .intersection()
+(a - b) == .difference()
+(a | b) == .union()
+
+
+
+check similarities between set 1st and the others: {2, 4} {1, 3} {1, 2}					#using .intersection() 
+change 1st set to the similarities between those 3 previous sets: {2, 4} {1, 3} {1, 2}			#using .intersection_update() 
+
+check if sets dont have any common elements if they dont have it will show True {2, 4} {1, 3} {1, 2}				using .isdisjoint() 
+
+check if set {1, 2} is part of set {1, 2, 4, 3} 				#using .issubset() 
+	#opposite methods
+check if set {1, 2, 4, 3} have elements that are in other set {1, 2}		#using .issuperset() 
+
+pop element from set {1, 2, 3}	=>	1					#using .pop() method 
+
+remove number 2 from set {1, 2, 3}							#.remove()
+
+return from sets {1, 2, 3, 3.14} and {1, 3, 2, 'python'} their symetric diffrence	#opposite of intersection			>			using .symmetric_difference or 'set_name ^ set_name' 
+replace set with simetric diffrence of 2 sets								>							using .symmetric_difference_update 
+
+ update set {1, 2, 3, 4} by set {5, 6, 7, 8, 9}			>				>							using .update()
+
+change string 'alibaba kamikadze' into set
+
+
+
+

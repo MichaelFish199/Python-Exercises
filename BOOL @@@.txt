@@ -1,0 +1,15 @@
+	*** BOOL ***
+
+#bool is immutable
+
+# fun fact bool		True = 1	False = 0
+
+sprawdź czy liczba 2**8 == 256      wynik musi być TRUE
+
+Check if 23 != 5
+
+Check if 23 < 23
+
+Check if 23 > 40
+
+check if 1 is in list [1, 2, 3, 4, 5] if yes print("Yes") if no ("No")

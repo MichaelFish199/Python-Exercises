@@ -1,0 +1,15 @@
+	*** TUPLE ***
+
+#tuple is immutable
+
+# Tuple has only 2 build in methods ;(
+
+
+x = (4, 2, 5)
+b = (1, 2, 3)		swap tuples so x will be (1, 2, 3)					>									x, b = b, x
+
+print only 2 3 4 from tuple: 1, 2, 3, 4, 5		>			>					>					i1, *i2, i3 = tuple  print(i2)
+
+count how many 'dogs' ones elements are in touple ('dog', 'cat', 'dog', 'cat', 'dog', 'cat', 'dog', 'cat', 'dog', 'cat', 'dog', 'cat', 'dog', 'cat')		using .count() 
+
+check on what index word 'dog' is located (1, 2, 43, True, 'dog')			>									using .index() 

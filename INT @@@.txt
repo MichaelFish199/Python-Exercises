@@ -1,0 +1,73 @@
+				*** INT ***
+
+
+#int is immutable
+
+
+				* BIT MANIPLATION *
+write 15 in binary system							using 0b 	>		0b1111
+
+write 35 in hexadecymal system							using 0x 	>		0x23
+
+using and operation and bits of number 6 and 5 						>			4
+
+	& - and operation on bits
+
+	| - or operation on bits
+
+	^ - xor operation on bits
+
+	~ - not operation on bits
+
+				** METHODS **
+
+
+without using '**' raise 5 to the power of 2					>							pow(5,3)
+
+without using '**' get a reminder from 5pow3 divided by 123 					>					pow(5,3,123)
+
+raise 5.5 to the power of 2.3
+
+change number 23 into binary number					>				using bin() 
+
+change 23 int into float by adding 			.0 after 23 = 23.0	or changing it to type float
+
+change float 12.12 into complex number by adding 0j
+
+using complex() create complex number		#function not a method
+
+using % operator get remainder from dividing 23 by 5
+
+using // get quotient from dividing 23 by 5
+
+W stringu "123" za pomocą int("str") zamień go na type int i dodaj do niego 27 aby powstał wynik 150
+
+W stringu "1.23" za pomocą float("str") zamień go na type float i dodaj do niego 10
+
+Do liczby 1.14 dodaj 2 i za pomocą int() spraw aby zostało wyświetlone samo 3
+
+ze stringa "adam" otrzymaj jego dlugość używając len() i dodaj do tego 10    powinieneś otrzymać 14
+
+Using a = 20 and b = 30  swap those variables's values  a, b = b, a	***swaping variables
+
+Using .as_integer_ratio() converts float number into fraction. try: 	1.5	10.25	 2.5
+
+Using int.bit_length check how many bits do you need to represent number in binary: 	64	32	200
+
+Using .conjugate() change complex numer imaginary part:  1+4j	10-30j		+ into - and - into +
+
+Using .to_bytes() represent any number in bytes						(20).to_bytes(2)				# byteorder='big' or 'little'	the most significant byte is at the begining or at the end
+
+Using .from_bytes() represent any bytes in numbers:	b'\x00\x10'   => 16		int.from_bytes(a, byteorder='big')	# byteorder='big' or 'little'
+
+Using .real print real part of number: 2+4j
+
+Using .imag print imag part of number: 2+4j
+
+x = 10    b = 20 swap values so x will be 20				>								x, b = b, x
+
+
+# to use denominator and numerator you have to import fractions
+
+
+

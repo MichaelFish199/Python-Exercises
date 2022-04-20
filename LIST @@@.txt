@@ -1,0 +1,61 @@
+		*** LIST ***
+
+#list is mutable
+
+Using one line Create a list containing even numbers from 1 to 100 and reverse that list			>					list(range(100,1,-1))
+
+print only 2 3 4 from list: 1, 2, 3, 4, 5		>			>					>					i1, *i2, i3 = list  print(i2)
+
+add number 4 to list [1, 2, 3] 			>							list += [4]
+
+to list a = ['maja', True, 'Basia'] add [1, 2, 4, 5, 6]    		>							a + [1, 2, 4, 5, 6]
+
+W liście ['cat', ['ladna', 'piekna'], 'maja', 'gruba', 'mloda'], [2323, 213, 23, 1] wyswietl 'piekna'  		  	-> rozw					[1][1]
+W liście ['cat', ['ladna', 'piekna'], 'maja', 'gruba', 'mloda'], [2323, 213, 23, 1] wyswietl cyfre 1
+W liście ['cat', ['ladna', 'piekna'], 'maja', 'gruba', 'mloda'], [2323, 213, 23, 1] reversnij drugą liste tak aby powstało [1, 23, 213, 2323] 		->		print(a[1][::-1])
+
+Using list(range()) create a list that contains numbers from 1 to 20
+
+make one list containing 1item from list A = [2,4,6] and one item from B = [10, 20, 30]			>				Using list(zip(A, B))
+
+w stringu "ala lubi: " za pomocą listy ['koty', 'psy', 'rybki'] przydziel mu drugą rzecz.
+
+***index == []    , slice == [::] - new list values
+
+Assign a new value to second(2) thing in list [1, 2, 3]   2 ==> 5   ,  1 5 3
+
+Using slicing [1, 2, 3, 4, 5, 6] replace 3 and 4 with 20
+
+In list [1, 2, 3, 4, 5, 6] using del a[index] delete number 5
+
+Using list function turn "Hello world" into list					->					list( )
+
+using in operator check if 1 is in [1, 2, 3, 4, 5, 6]
+
+using list and range function creata a list containing numbers from 0 to 10     ->							list(range(11))
+
+using list and range function creata a list containing numbers from 0 to 100 containing only even numbers	->			list(range(0 ,101, 2))
+
+Using list cat = ['fat', 'orange', 'loud'] create asiigment size, color, dispasition = cat and print size	***multiple assigment
+
+Using index method check index of maja in list ['kaja', 'basia', 'maja']
+
+just add 'matylda' to list ['kaja', 'basia', 'maja']				--->>>							.append
+
+add 'gabrysia' to list ['kaja', 'basia', 'maja'] into index 1  	---->>>								.insert
+
+remove maja value from list ['kaja', 'basia', 'maja']			---->>>								. remove
+
+delete value asiigment to index 0 ['kaja', 'basia', 'maja']		---->>>							poprawny > a[0] = None <     .remove
+
+sort list [2,6,1,8,2,-8,9,-20,12,1]
+
+sort list ['kaja', 'basia', 'maja']
+
+sort in reverse list [2,6,1,8,2,-8,9,-20,12,1] 					---->>>								.sort(reverse=True)
+
+sort list ["Alicja", "Zumbana", 'kaja', 'basia', 'maja'] in alphabetical order				---->>>							.sort(key=str.lower)
+
+change list ["how","are","you",'you','doing'] into string 										using ' '.join(list) method
+
+using for loop print(index, item) in list ["dog", "cat", 'pancil', 'pen', 'drink', 'wolf', 'rubber']				#try without enumerate			>	enumerate >	or print(a.index(i), i)

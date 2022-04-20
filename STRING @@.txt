@@ -1,0 +1,118 @@
+					*** STRING ***
+
+#string is immutable
+
+
+"Old Style" string formatting	>	"mam na imię %s i mam %s lat"
+Using ".format()" Method	>	'mam na imię {} {}'.format(name, secname)
+Using python f-string		>	f'mam na imię {name} {sec_name}'
+normal string with var		>	'mam na imię ' + a + "i mam" + str(b) + "lat"
+
+w f stringu i nie tylko mozesz takie rzeczy dodac {:02,.2f} #its called formatting 
+
+use tab to indent text 'kalinka'							>					>				'\tkalinka'
+
+Create a raw string from this "maja \n lubi \n lody" from this string 			>			r"str"	
+
+using f'string or .format(1, 2, 3, 4, 5, 6, 7, 8, 9) create a string "" that tell how much old you are			>>							"{8}{8}".format(0, 9, 8, 7, 6, 5, 4, 3, 2, 1)
+
+using f'string or .format(name, sec_name) create variables contating strings with information and print my name is name, sec_names
+
+using f'string or .format and for loop print numbers from 1 to 10 but > output > 01, 02, 03, 04, 05, 06, 07, 08, 09, 10				>			for i in range(11):	print({:02}.format(i))
+
+using f'string or .format print pi 3.14159265359 with 2 digital places > 	3.14							>>					{:.2f}
+
+using f'string or .format() print number 57284193746.1232332 by using ',' after every 3 numbers and printing its only 2 digital places
+
+print 1,000,000 to 1,000,020 using for loop and format or f'string method to be easier to read such numbers try include comma bettwen 3 numbers		>				print({:,}.format(i))	
+
+
+			*  METHODS  *
+
+W stringu "alibaba" zamien wszystkie małe litery na duże				>			 za pomocą .upper()
+W stringu "KalinKa ŚĆierżo" zamien wszystkie litery na małe				>			 za pomocą metody .casefold() 
+W stringu "dzień dobry" powieksz pierwszą litere w stringu				>			 za pomocą metody .capitalize() 
+W stringu "oto wielki adam" zamień wszystkie pierwszye litery słów na duże		>			 za pomocą .title()
+W stringu " wielki ADAMA LAAJ" zamień duze litey na male a male na duze			>			 użyj .swapcase() 
+W stringu "MASTER" zamień litery w stringu na małą czcionke				>			casefold or lower
+
+
+W stringu "abl" za pomocą .maketrans() stworz słownik odpowiadający a = 93 , b = 97, l = 102
+W stringu "alibaba" za pomocą .translate() podepnij poprzednio wykonany słownik
+W stringu "alibawewbrbxdbdvfba" wstaw 10 zer przed stringiem				>						.zfill(10+len(string))
+W stringu "     alibaba     " za pomocą .strip() usuń spacje na początku i na końcu.
+W stringu "!!!maja!!!" pozbądz się wszystkich znaków specjalnych ze stringu							>	.strip()
+W stringu "alialialialiKAJAMAJAalialialiali" za pomocą .lstrip() usuń ali z lewej strony wyrazu
+W stringu "alialialialiKAJAMAJAalialialiali" za pomocą .rstrip() usuń ali z prawej strony wyrazu
+W stringu "Hello World" sprawdz za pomocą .startswith() czy string zaczyna się od "Hel" następnie wiedząc że .startswith("str",start,end) sprawdz czy drugi wyraz zaczyna się od W. ma wyjść TRUE
+W stringu "Maja bardzo lubi \n kosic \n trawe" za pomocą .splitlines() zamień string na liste gdzie liste oddzielają zmiany linijki, a następnie zmieniając splitlines(self, /, keepends= na TRUE)<--- wyswietl liste ukazjąc zmiany linijki
+W stringu "alibaba lubi lody i ciuchcie" za pomocą .split() zamień string na liste.((by default split method usues spaces to divide string into list))
+W stringu "alibaba lubi lody i ciuchcie" za pomocą .split() podziel string na liste w miejscu występowania "l"
+W stringu "alibaba lubi lody i ciuchcie" za pomocą .split() podziel string na trzyelementową liste dzięki ((maxsplit=x))
+W stringu "alibaba lubi lody i ciuchcie" za pomocą .rsplit() podziel string na dwuelementową liste od prawej  strony dzięki ((maxsplit=x))
+W stringu "alibaba lubi lody i ciuchcie" za pomocą .rpartition() zamień string na trzyczęściowego tupla z wyrazami "alibaba lubi lody " "i" " ciuchcie" ->	a.rpartition(" i ")
+W stringu "alibaba lubi lody i ciuchcie" za pomocą .rpartition() wpisz w nawias wyraz którego nie ma w stringu i zobacz co się stanie
+W stringu "101" używając .ljust() lub .rjust() dodaj 5zer po lewej stronie stringu                                                      rozwiązanie  ->      STR.rjust(8, '0')
+W stringu "UWAGA" używając .ljust() lub .rjust() dodaj 3 wykrzykniki po prawej stronie wyrazu, a następnie po lewej
+W stringu "A1 A2 A3* A1 A3" za pomocą .rindex() znajdź pozycje lewego "A3"                                              podpowiedz --->   .rindex(str, początek, koniec)
+W stringu "jdwajdojwidl1idwodjlawdldwi" za pomocą .index() znajdź pozycje cyfry "1"
+W stringu "14568085801560996871" za pomocą .index() lub rindex() znajdź jedynke w środku ciągu liczb, nie moze być wynik 0 lub 21
+.find() == .index()   WYŚWIETLAJĄ JEDYNIE INNE ERRORY
+W stringu "14546804844580154604994464714" za pomocą .find() lub .rfind() znajdź pozycje "801"
+W stringu "1454610804844580101456271544580014561027115460604464714" poszukujesz szczęśliwej "10" znajduje się ona miedzy 10wyrazem a 20 znajdz jej index za pomocą .find
+W stringu "maja lubi lody ale ma już lipne zęby" za pomocą .replace() zamień wszystkie litery "l" na "g"
+W stringu "wierzę w Boga ojca wszechmogącego bo Boga trzeba czcić" za pomocą .replace() zamień słowo "Boga" na "tate" tylko jeden raz
+W liście zawierającej stringi ["adam.exe", "switch.exe", "word.exe", "dwjkdw"] za pomocą .removesurffix() usuń ".exe" w stringach     rozwiązanie -->  files = [x.removesurffix(".exe")] for x in files			https://www.youtube.com/watch?v=juQ6HX4taLo
+W stringu "12312345654321" za pomocą .removeprefix() albo .lstrip() usuń "123" tak aby powstało "12345654321"
+W stringu "12312345654321" za pomocą jednej z podaych metod .removeprefix() , .removesurffix(), .strip() , .lstrip() , .rstrip() spraw aby pozostalo 45654
+W stringu "Master Saitama Sama" za pomocą .partition() zamine stringa na tupla z wartosciami ("Master Saitama Sama", "", "") i ("Master", "Saitama", "Sama")
+W stringu "kaja" zapomocą .just() dodaj 3 zera po lewej stronie stringa
+W liście ["this", "is", "a", "string"] za pomocą .join() storz z tego pełne zdanie w stringu
+w stringu "665382" za pomocą .joim() wymien cyfry znakiem "-"		->>			'-'.join(a)
+
+
+W stringu "MASTER" sprawdz czy string jest wielką czcionką.				->		za pomocą .isupper()
+W stringu "Master Saitama Sama" sprawdz czy string jest titled				->		za pomocą .istitle()
+W stringu "   " sprawdz czy dany string zawiera tylko spacje 				->		.isspace()
+Sprawdz czy string "\n" da się wyświetlic 						->		.isprintable() 
+Sprawdz czy string "123" i "1/2" zawiera liczby 					->		.isnumeric()
+Sprawdz czy string "dwuhdwod" jest zbudowany tylko z małych liter			->		.islower()
+#	.isidentifier() useless? sprawdza czy string jest poprawny
+Sprawdz czy string "123" zawiera jakieś liczby całkowite albo częściowe			->		.isdigit()
+Sprawdz czy string "Ania" zawiera same litery						-> 		.isalpha()
+W stringu "123" sprawdź czy string zawiera liczby całkowite dziesiętne			->		za pomocą .isdecimal() 
+W stringu "wfiil1ldw" sprawdz czy string zawiera same zanki ascii			->		 za pomocą .isascii()
+
+
+W stringu "a2l(4i.&6b1/@,a3b2aa*" podziel stringa na trzy listy zawierajace
+ osobno liczby, litery i znaki								->		 za pomocą .isnumeric() i .isalpha() i is.ascii()
+
+.isalpha() -> a A   .isalnum() -> A1   .decimal() -> 3   .digit() -> 3, 2**2   .numeric() -> 3, 2**2, 1/2   .isascii() -> a, A, A1, 3, 2**2, 1/2
+
+W stringu "alib aba" za pomocą .index() sprawdź na jakiej pozycji znajduje się "i"
+W stringu "mam na imie {} {}" za pomocą .format() utwórz "mam na imie Mikołaj Ryba"
+W stringu "mam na imie {imie} {nazwisko}" za pomocą .format(imie = "" , nazwisko = "") utwórz "mam na imie Mikołaj Ryba"
+W stringu "{} {} {}" za pomocą .format("3","2","1") utwórz "1, 2, 3"  		->		 w {} wpisuje się index
+W stringu '{x} {y}' za pomocą .format() lub .format_map() podepnij słownik {'x':4,'y':-5}		-	-	---> rozwiązanie				point = {'x':4,'y':-5}   print('{x} {y}'.format(**point))  |   .format_map(point))
+Stwórz klase do kotórej podajesz słownik tuplowy i w tej klasie jest funckcja __missing__(self,key): return key       		--> rozwiązanie			class Coordinate(dict): def __missing__(self, key):return keyprint('({x}, {y})'.format_map(Coordinate(x='6')))print('({x}, {y})'.format_map(Coordinate(y='5')))print('({x}, {y})'.format_map(Coordinate(x='6', y='5')))
+W stringu "919  1  231" za pomocą .find() albo .index() znajdz pozycje na której znajduje się środkowe "1"     			find daje -1 a index error
+W stringu "kalina ma rybe" sprawdź czy w stringu znajduje się string "ma"     nie używając metod    				-->		print("ma" in STR)
+Reverse string "MARS"					----->						--->> rozwiązanie					[::-1]
+W stringu "kalinamarybe" odzdziel słowa tabami i za pomocą .expandtabs() powiększ wielkość tabów   -> rozwiązanie 	->		->		\t
+W stringu "majkaji1l1il1i" za pomocą .endswith() sprawdz czy string konczy się "l1i"
+Zamień type string "ala" na type bytes  				->>								b"str"
+po zamienieniu stringa "y" na type bytes sprawdź jaką wartość ma ta litera w kodzie ascii	->				print(str[0])
+W stringu "Adaś" za pomocą .encode() zamień znaki na ascii i errory zastąp zapytajnikami lub je zignoruj      ->		print(s.encode("ascii", "replace"))   "ignore"   "Ada?" "Ada"
+W stringu "ś" za pomocą .encode() - > powinno wyswietlic b'\xc5\xba'
+utf-8 is deafault()     utf-16 i 32 to wiecej moiejsc b'\xff\xfez\x01'
+W stringu "alibaba babac ciobe" użyj .count() aby policzyć ilość występowania "a" tylko w słowie alibaba
+W stringu "kalina" za pomocą metody .center() powieksz stringa do długości 10
+W stringu "KalinKa ŚĆierżo" za pomocą metody .casefold() zamien wszystkie litery na małe
+W stringu "ad" za pomocą id(str) sprawdz w ktorym miejscu pamięci znajduje sie dany string
+stwórz klase i dodaj definicje __str__ i może __repr__ aby łatwiej moża było wyświetlić dany obiekt         https://www.youtube.com/watch?v=aIdzBGzaxUo
+repr() jest dla developerów do debugowania
+za pomocą __sizeof__ lub sys.getsizeof() sprawdź wielkość pamięci stringa "123"				https://www.youtube.com/watch?v=htx7apTG2hM
+za pomocą  .__sizeof__() sprawdz wielkość pamięci jaką zajmuje string	STR->	przykład 	int().__sizeof__()
+za pomocą  str.__add__() dodaj 2stringii lub liczby z int. i  je wyswietl
+wyświetl ("mouse","dog","cat") za pomocą print i dodaj do tej listy sep = "" co zmieni default separator ze spacji na nic
+wyświetl ("domkument") i za pomocą end=.exe dodaj tą funkcje po przecinku do obok stringa.
