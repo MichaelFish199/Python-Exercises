@@ -2,7 +2,7 @@
 
 
 
-#dict is mutable
+
 	
 using dict = {'name': 'Mikolaj', 'age': 23} and .format()									>				or    "{0[name]}"  {1[name]} .format(dict)
 	complete string "my name is {} and i am {} years old."					>				>			"  {0} {1}  ".format(dict['name'], dict['age'])
