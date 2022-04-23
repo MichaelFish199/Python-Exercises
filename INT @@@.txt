@@ -1,7 +1,3 @@
-				*** INT ***
-
-
-#int is immutable
 
 
 				* BIT MANIPLATION *
