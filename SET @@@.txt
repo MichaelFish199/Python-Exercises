@@ -1,9 +1,3 @@
-		*** SET ***
-
-
-#set is mutable
-#sets do not contain duplicat elements
-
 
 create an empty set			>			>				 using set()
 create a set using set([])
