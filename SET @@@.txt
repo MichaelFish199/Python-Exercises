@@ -1,14 +1,4 @@
 
-create an empty set			>			>				 using set()
-create a set using set([])
-to create a set using {} you have to give it some elements
-
-
-create a set of numbers from 1 to 20			>			 		using set(range()) 
-add to set, item 13					>					add()
-add to set, items like 12, 11, 'malina', 23, 'Basia', True			#union		by using .add() 
-copy set								#	using .copy() 
-check how many elements are in your set					#	by using len() 
 remove 'malina' from set 						#if you write element that doesn't exist in set -> THE ERROR WILL OCCUR	by using .remove() 
 remove 'Basia' from set 						#if you write element that doesn't exist in set -> nothink will happened	by using .discard() 
 remove all elements in your set						by using .clear() 
