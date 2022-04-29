@@ -24,10 +24,6 @@ check all values in dict = {"brand": "Ford", "electric": False, "year": 1964,"co
 
 get an item from key kaja and maja {'kaja': 'maj', 'maid': 'wolf'}							>		using .get() > if key not found it pops NONE	using dict['adw'] = 'sam' it and key not found it pops error
 
-check all items in dict = {"brand": "Ford", "electric": False, "year": 1964,"colors": ["red", "white", "blue"]}			> using 		.item()
-
-check all keys in dict = {"brand": "Ford", "electric": False, "year": 1964,"colors": ["red", "white", "blue"]} 				>			using .keys()
-
 remove specific item "brand" from dict = {"brand": "Ford", "electric": False, "year": 1964,"colors": ["red", "white", "blue"]}			>		.pop()
 
 remove last item from dict = {"brand": "Ford", "electric": False, "year": 1964,"colors": ["red", "white", "blue"]}			>		using   .popitem()
