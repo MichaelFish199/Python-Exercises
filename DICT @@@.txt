@@ -8,7 +8,7 @@ using dict = {'name': 'Mikolaj', 'age': 23} and .format()									>				or    "{0
 	complete string "my name is {} and i am {} years old."					>				>			"  {0} {1}  ".format(dict['name'], dict['age'])
 
 
-clear dict = {'kaja': 'maj', 'maid': 'wolf'}		>								>		using clear() s
+
 
 copy dict = {'kaja': 'maj', 'maid': 'wolf'}	>								>				using .copy() 
 
