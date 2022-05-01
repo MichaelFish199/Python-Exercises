@@ -42,7 +42,5 @@ convert list [1, 2, 3, 4, 5] into dictionary using numbers in list as keys			>		
 
 using previous method create dict using range from 1 to 10 keys and all values 0			>>				>			{}.fromkeys(range(1,11), 0)
 
-string 'diwjalibabas' turn it into dict:  keys = letters   , values = times
-
 ages = {'kaja': '21', 'maid': '24'}
 complete a string f'kaja ma {age} lat'						>							>		age = ages.get('kaja', Unknown)	unknown will pop ifd person doesnt exist in dict
