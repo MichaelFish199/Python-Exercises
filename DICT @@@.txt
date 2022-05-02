@@ -26,8 +26,6 @@ get an item from key kaja and maja {'kaja': 'maj', 'maid': 'wolf'}							>		usin
 
 remove specific item "brand" from dict = {"brand": "Ford", "electric": False, "year": 1964,"colors": ["red", "white", "blue"]}			>		.pop()
 
-remove last item from dict = {"brand": "Ford", "electric": False, "year": 1964,"colors": ["red", "white", "blue"]}			>		using   .popitem()
-
 to dic {'kaja': 'maj', 'maid': 'wolf'} add another object						>>						dict['adw'] = 'sam'
 
 convert dict {'kaja': 'maj', 'maid': 'wolf'} to JSON object using									>	import json	 json.dumps(dict) or json.dump(dict)
