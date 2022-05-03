@@ -10,13 +10,7 @@ using dict = {'name': 'Mikolaj', 'age': 23} and .format()									>				or    "{0
 
 clear dict = {'kaja': 'maj', 'maid': 'wolf'}		>								>		using clear() s
 
-copy dict = {'kaja': 'maj', 'maid': 'wolf'}	>								>				using .copy() 
-
 			>		fromkeys()
-
-update a dict by another dict = {"brand": "Ford"} , {'kaja': 'maj', 'maid': 'wolf'}			>		a.update(b)
-
-a = {"brand": "Ford", 'kaja': 'maj'} b = {'kaja': 'maj', 'maid': 'wolf'} combine these dictioneries so there are no multiple elements				>				= {**a, **b}
 
 update a dict = {'kaja': 'maj', 'maid': 'wolf'} by 'kaja' = 23	and  'marta' without  value				>		.update(kaja=23, marta=None)
 
@@ -27,8 +21,6 @@ get an item from key kaja and maja {'kaja': 'maj', 'maid': 'wolf'}							>		usin
 remove specific item "brand" from dict = {"brand": "Ford", "electric": False, "year": 1964,"colors": ["red", "white", "blue"]}			>		.pop()
 
 remove last item from dict = {"brand": "Ford", "electric": False, "year": 1964,"colors": ["red", "white", "blue"]}			>		using   .popitem()
-
-to dic {'kaja': 'maj', 'maid': 'wolf'} add another object						>>						dict['adw'] = 'sam'
 
 convert dict {'kaja': 'maj', 'maid': 'wolf'} to JSON object using									>	import json	 json.dumps(dict) or json.dump(dict)
 
