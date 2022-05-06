@@ -38,7 +38,7 @@ fix!  you have dict with many None values = {'gruby': None, "brand": None, "elec
 
 convert list [1, 2, 3, 4, 5] into dictionary using numbers in list as keys			>					>			dict.fromkeys(list, value)
 
-using previous method create dict using range from 1 to 10 keys and all values 0			>>				>			{}.fromkeys(range(1,11), 0)
+
 
 ages = {'kaja': '21', 'maid': '24'}
 complete a string f'kaja ma {age} lat'						>							>		age = ages.get('kaja', Unknown)	unknown will pop ifd person doesnt exist in dict
