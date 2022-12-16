@@ -1,4 +1,4 @@
-#hi
+# hi
 
 This repository contains houndreds of exercises from all the notes that I acumulated over the first months of studying vanilla python.\
 Each cell contains some data and exercise with expected result far on the right.\
